@@ -15,10 +15,10 @@ export default function ProjectsPage() {
     },
     {
       icon: TreePine,
-      name: "Parks V3",
+      name: "Agora",
       description:
-        "A next-generation, white-label booking and management platform redefining outdoor recreation experiences.",
-      features: ["Real-time Booking", "Capacity Management", "Offline & Field Systems", "Payment Processing"],
+        "A dynamic platform that transforms how organizations manage spaces, people, and experiences — combining intelligent automation with a people-first approach to design and delivery.",
+      features: ["Real-Time Availability & Scheduling", "Capacity & Resource Management", "Offline & Field-Ready Systems", "Secure Payments & Reporting"],
       color: "from-[#f28b4f] to-[#f8c16b]",
     },
     {
