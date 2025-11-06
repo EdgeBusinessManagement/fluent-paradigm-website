@@ -20,7 +20,7 @@ export default function CareersPage() {
     {
       icon: Users,
       title: "Interns",
-      description: "Learn and grow through projects guided by experienced mentors.",
+      description: "Learn and grow through projects guided by experienced mentors",
       skills: ["Eager to Learn", "Team Player", "Problem Solver", "Tech Enthusiast"],
     },
   ]
