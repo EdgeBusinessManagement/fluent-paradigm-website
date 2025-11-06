@@ -67,11 +67,12 @@ export default function DifferentiatorsPage() {
             </div>
 
             {/* Grid (same as Services) */}
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 justify-center">
               {diffs.map((item, index) => (
                 <div
                   key={item.title}
-                  className="bg-card border border-border rounded-lg p-8 hover:border-primary transition-all group"
+                  className={`bg-card border border-border rounded-lg p-8 hover:border-primary transition-all group
+                    ${index === diffs.length - 1 ? "md:col-span-2 md:w-1/2 mx-auto" : ""}`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {/* Icon tile — EXACTLY like Services: copper-gradient + dark icon */}
