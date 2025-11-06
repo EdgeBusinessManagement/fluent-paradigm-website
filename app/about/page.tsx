@@ -1,6 +1,7 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Users, Target, Lightbulb } from "lucide-react"
+import Image from "next/image"
 
 export default function AboutPage() {
   return (
@@ -47,10 +48,16 @@ export default function AboutPage() {
 
             <div className="bg-card border border-border rounded-lg p-12 mb-12">
               <h2 className="text-3xl font-bold mb-8 text-center copper-gradient-text">Leadership</h2>
-              <div className="grid md:grid-cols-2 gap-12">
+              <div className="grid md:grid-cols-2 gap-12 mb-12">
                 <div className="text-center">
-                  <div className="w-32 h-32 rounded-full copper-gradient mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-4xl font-bold text-[#0A0E14]">DS</span>
+                  <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-primary">
+                    <Image
+                      src="/derrick.jpg"
+                      alt="Derrick Serrer"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h3 className="text-2xl font-bold mb-2 text-foreground">Derrick Serrer</h3>
                   <p className="text-primary font-medium mb-3">Founder & President</p>
@@ -61,8 +68,14 @@ export default function AboutPage() {
                 </div>
 
                 <div className="text-center">
-                  <div className="w-32 h-32 rounded-full copper-gradient mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-4xl font-bold text-[#0A0E14]">PN</span>
+                  <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-primary">
+                    <Image
+                      src="/parviz.jpg"
+                      alt="Parviz Nadjafov"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h3 className="text-2xl font-bold mb-2 text-foreground">Parviz Nadjafov</h3>
                   <p className="text-primary font-medium mb-3">Director of Development</p>
@@ -72,16 +85,38 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
+
+              <div className="border-t border-border pt-8">
+                <h3 className="text-2xl font-bold mb-4 text-center copper-gradient-text">Board of Directors</h3>
+                <p className="text-gray-400 leading-relaxed text-center max-w-3xl mx-auto">
+                  Fluent Paradigm Technologies is supported by a deeply experienced Board that provides strategic
+                  guidance, accountability, and balance. Their collective insight ensures every step forward reflects
+                  our shared commitment to people-first innovation and integrity in leadership.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-card border border-border rounded-lg p-12">
-              <h2 className="text-3xl font-bold mb-6 text-center copper-gradient-text">Board of Directors</h2>
+            <div className="bg-card border border-border rounded-lg p-12 mb-12">
+              <h2 className="text-3xl font-bold mb-8 text-center copper-gradient-text">Our Team</h2>
+
+              <div className="mb-8 rounded-lg overflow-hidden">
+                <Image src="/team.jpg" alt="Fluent Paradigm Team" width={1200} height={800} className="w-full h-auto" />
+              </div>
+
+              <p className="text-gray-400 leading-relaxed text-center max-w-3xl mx-auto mb-8">
+                Behind every great product is a team of passionate, skilled professionals who bring ideas to life. At
+                Fluent Paradigm, our diverse team includes full-stack developers, backend engineers, DevOps specialists,
+                QA engineers, and a dedicated marketing team — all working together to deliver exceptional solutions.
+              </p>
+
               <p className="text-gray-400 leading-relaxed text-center max-w-3xl mx-auto">
-                Fluent Paradigm Technologies is supported by a deeply experienced Board that provides strategic
-                guidance, accountability, and balance. Their collective insight ensures every step forward reflects our
-                shared commitment to people-first innovation and integrity in leadership.
+                We're also proud to mentor the next generation of tech talent through our internship program, where
+                emerging developers and designers join our team to learn, grow, and contribute to real-world projects.
+                Together, we build technology that matters.
               </p>
             </div>
+
+            {/* Removed duplicate Board of Directors section */}
           </div>
         </section>
       </main>
