@@ -26,24 +26,6 @@ export function Footer() {
               >
                 <Linkedin className="h-5 w-5 text-primary" />
               </Link>
-              <Link
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-card border border-border hover:border-primary hover:bg-primary/10 rounded-lg flex items-center justify-center transition-all"
-                aria-label="GitHub"
-              >
-                <Github className="h-5 w-5 text-primary" />
-              </Link>
-              <Link
-                href="https://youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-card border border-border hover:border-primary hover:bg-primary/10 rounded-lg flex items-center justify-center transition-all"
-                aria-label="YouTube"
-              >
-                <Youtube className="h-5 w-5 text-primary" />
-              </Link>
             </div>
           </div>
         </div>
