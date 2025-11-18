@@ -17,7 +17,7 @@ export default function ProjectsPage() {
   },
   {
     icon: TreePine,
-    name: "Agora",
+    name: "Agora³",
     description:
       "A dynamic platform that transforms how organizations manage spaces, people, and experiences — combining intelligent automation with a people-first approach to design and delivery.",
     features: [
