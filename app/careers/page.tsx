@@ -43,7 +43,15 @@ export default function CareersPage() {
             </div>
 
             <div className="mb-16">
-              <h2 className="text-3xl font-bold mb-8 text-center text-foreground">Open Positions</h2>
+              <h2 className="text-3xl font-bold mb-2 text-center text-foreground">
+                Roles We Typically Hire For
+              </h2>
+              <p className="text-gray-400 text-center mb-8 max-w-2xl mx-auto">
+                We don&apos;t have active openings right now, but these are the key roles we 
+                regularly recruit for as our team grows. If you want to be considered 
+                for future opportunities, feel free to reach out.
+              </p>
+
               <div className="grid md:grid-cols-3 gap-8">
                 {positions.map((position, index) => (
                   <div
@@ -67,13 +75,14 @@ export default function CareersPage() {
                       ))}
                     </div>
 
-                    <Button
-                      variant="outline"
-                      className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
-                    >
-                      Apply Now
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
+                    <a href="mailto:info@fluentparadigm.com">
+                      <Button
+                        variant="outline"
+                        className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
+                      >
+                        Future Opportunities
+                      </Button>
+                    </a>
                   </div>
                 ))}
               </div>

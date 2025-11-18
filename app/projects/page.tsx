@@ -2,34 +2,43 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { GraduationCap, TreePine, Brain, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function ProjectsPage() {
   const projects = [
-    {
-      icon: GraduationCap,
-      name: "TeacherBuilt",
-      description:
-        "A community-driven education multi vendor marketplace connecting educators through resources, transparency, and shared success.",
-      features: ["Resource Marketplace", "Educator Community", "Profit Sharing", "Analytics Dashboard"],
-      color: "from-[#e64522] to-[#f28b4f]",
-    },
-    {
-      icon: TreePine,
-      name: "Agora",
-      description:
-        "A dynamic platform that transforms how organizations manage spaces, people, and experiences — combining intelligent automation with a people-first approach to design and delivery.",
-      features: ["Real-Time Availability & Scheduling", "Capacity & Resource Management", "Offline & Field-Ready Systems", "Secure Payments & Reporting"],
-      color: "from-[#f28b4f] to-[#f8c16b]",
-    },
-    {
-      icon: Brain,
-      name: "Oblio",
-      description:
-        "An AI-powered Fintech platform that unifies data across systems, giving organizations a single source of truth for real-time, human-readable insights.",
-      features: ["AI Analytics", "Predictive Modeling", "Financial Insights", "Custom Reporting"],
-      color: "from-[#f8c16b] to-[#e64522]",
-    },
-  ]
+  {
+    icon: GraduationCap,
+    name: "TeacherBuilt",
+    description:
+      "A community-driven education multi vendor marketplace connecting educators through resources, transparency, and shared success.",
+    features: ["Resource Marketplace", "Educator Community", "Profit Sharing", "Analytics Dashboard"],
+    color: "from-[#e64522] to-[#f28b4f]",
+    href: "https://teacherbuilt.com",
+  },
+  {
+    icon: TreePine,
+    name: "Agora",
+    description:
+      "A dynamic platform that transforms how organizations manage spaces, people, and experiences — combining intelligent automation with a people-first approach to design and delivery.",
+    features: [
+      "Real-Time Availability & Scheduling",
+      "Capacity & Resource Management",
+      "Offline & Field-Ready Systems",
+      "Secure Payments & Reporting",
+    ],
+    color: "from-[#f28b4f] to-[#f8c16b]",
+    comingSoon: true,
+  },
+  {
+    icon: Brain,
+    name: "Oblio",
+    description:
+      "An AI-powered Fintech platform that unifies data across systems, giving organizations a single source of truth for real-time, human-readable insights.",
+    features: ["AI Analytics", "Predictive Modeling", "Financial Insights", "Custom Reporting"],
+    color: "from-[#f8c16b] to-[#e64522]",
+    comingSoon: true,
+  },
+]
 
   return (
     <div className="min-h-screen">
@@ -73,13 +82,29 @@ export default function ProjectsPage() {
                         ))}
                       </div>
 
-                      <Button
-                        variant="outline"
-                        className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
-                      >
-                        Learn More
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
+                      <div className="mt-2">
+                        {project.href ? (
+                          // Real external CTA for TeacherBuilt
+                          <a
+                            href={project.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Button
+                              variant="outline"
+                              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
+                            >
+                              Learn More
+                              <ArrowRight className="ml-2 h-4 w-4" />
+                            </Button>
+                          </a>
+                        ) : project.comingSoon ? (
+                          // Non-clickable "Coming Soon" pill for Agora & Oblio
+                          <div className="inline-flex items-center px-4 py-2 border border-primary text-primary rounded-md text-sm font-medium opacity-70 cursor-default">
+                            Coming Soon
+                          </div>
+                        ) : null}
+                      </div>
                     </div>
                   </div>
                 </div>

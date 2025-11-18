@@ -70,7 +70,7 @@ export default function AboutPage() {
                 <div className="text-center">
                   <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-primary">
                     <Image
-                      src="/parviz.jpg"
+                      src="/parviz_n.jpg"
                       alt="Parviz Nadjafov"
                       width={128}
                       height={128}
@@ -82,6 +82,25 @@ export default function AboutPage() {
                   <p className="text-gray-400 leading-relaxed">
                     Technical expert driving innovation and excellence in software architecture, scalability, and
                     reliability. Parviz leads with precision, purpose, and collaboration at the core of every build.
+                  </p>
+                </div>
+
+                <div className="text-center md:col-span-2 max-w-xl mx-auto">
+                  <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-primary">
+                    <Image
+                      src="/jasmine.jpg"
+                      alt="Jasmine Bailey"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2 text-foreground">Jasmine Bailey</h3>
+                  <p className="text-primary font-medium mb-3">Marketing Manager</p>
+                  <p className="text-gray-400 leading-relaxed">
+                    Jasmine leads our marketing vision with creativity and disciplined
+                    strategy. She strengthens relationships through clear storytelling
+                    and ensures our brands reflect the integrity of our work.
                   </p>
                 </div>
               </div>
