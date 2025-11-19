@@ -7,10 +7,27 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Fluent Paradigm Technologies | Engineering Innovation",
+  title: "Fluent Paradigm Technologies | Innovation with Integrity",
   description:
     "Fluent Paradigm Technologies builds advanced platforms and digital solutions for education, government, and enterprise.",
-  generator: "v0.app",
+
+  openGraph: {
+    title: "Fluent Paradigm Technologies | Innovation with Integrity",
+    description:
+      "Fluent Paradigm Technologies builds advanced platforms and digital solutions for education, government, and enterprise.",
+    url: "https://www.fluentparadigm.com",
+    siteName: "Fluent Paradigm Technologies",
+    images: ["/logo.png"],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Fluent Paradigm Technologies | Innovation with Integrity",
+    description:
+      "Fluent Paradigm Technologies builds advanced platforms and digital solutions for education, government, and enterprise.",
+    images: ["/logo.png"],
+  },
 }
 
 export default function RootLayout({
