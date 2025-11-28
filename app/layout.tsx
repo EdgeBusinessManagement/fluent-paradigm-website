@@ -28,6 +28,7 @@ export const metadata: Metadata = {
       "Fluent Paradigm Technologies builds advanced platforms and digital solutions for education, government, and enterprise.",
     images: ["/logo.png"],
   },
+    generator: 'v0.app'
 }
 
 export default function RootLayout({
