@@ -1,7 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { GraduationCap, TreePine, Brain, ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { GraduationCap, TreePine, Brain } from "lucide-react"
 
 export default function ProjectsPage() {
   const projects = [
@@ -81,25 +80,13 @@ export default function ProjectsPage() {
                         ))}
                       </div>
 
-                      <div className="mt-2">
-                        {project.href ? (
-                          // Real external CTA for TeacherBuilt and Agora³
-                          <a href={project.href} target="_blank" rel="noopener noreferrer">
-                            <Button
-                              variant="outline"
-                              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
-                            >
-                              Learn More
-                              <ArrowRight className="ml-2 h-4 w-4" />
-                            </Button>
-                          </a>
-                        ) : project.comingSoon ? (
-                          // Non-clickable "Coming Soon" pill for Oblio
+                      {project.comingSoon && (
+                        <div className="mt-2">
                           <div className="inline-flex items-center px-4 py-2 border border-primary text-primary rounded-md text-sm font-medium opacity-70 cursor-default">
                             Coming Soon
                           </div>
-                        ) : null}
-                      </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
