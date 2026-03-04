@@ -28,7 +28,7 @@ export default function ContactPage() {
       `Email: ${email}\n\n` +
       `Message:\n${message}`
 
-    const mailtoLink = `mailto:info@fluentparadigm.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:derrick.serrer@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`
 
@@ -90,10 +90,10 @@ export default function ContactPage() {
                         Email
                       </h3>
                       <a
-                        href="mailto:info@fluentparadigm.com"
+                        href="mailto:derrick.serrer@gmail.com"
                         className="text-primary hover:underline"
                       >
-                        info@fluentparadigm.com
+                        derrick.serrer@gmail.com
                       </a>
                     </div>
                   </div>

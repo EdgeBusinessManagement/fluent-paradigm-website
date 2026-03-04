@@ -75,7 +75,7 @@ export default function CareersPage() {
                       ))}
                     </div>
 
-                    <a href="mailto:info@fluentparadigm.com">
+                    <a href="mailto:derrick.serrer@gmail.com">
                       <Button
                         variant="outline"
                         className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
