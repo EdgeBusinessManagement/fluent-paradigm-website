@@ -107,7 +107,7 @@ export function Hero() {
 
           <p className="text-lg text-gray-400 max-w-3xl mx-auto text-pretty leading-relaxed">
             Fluent Paradigm Technologies engineers modern digital platforms that empower education, government, and
-            enterprise — combining innovation, empathy, and excellence to create meaningful impact.
+            enterprise {"\u2014"} combining innovation, empathy, and excellence to create meaningful impact.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
